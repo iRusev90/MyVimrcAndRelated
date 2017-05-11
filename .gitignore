@@ -1,2 +1,4 @@
 # so that versions of files I edit are not uploaded
 backup/*
+# exception to the rule
+!backup/.gitkeep 
