@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/irusev/Work/Code/Java/exams/theoretical-exams-examinee-web'
+let g:netrw_dirhist_2='/home/irusev/.vim/bundle'
+let g:netrw_dirhist_3='/home/irusev/.vim/bundle/.vundle'
+let g:netrw_dirhist_4='/home/irusev/Work/Code/js'
+let g:netrw_dirhist_5='/home/irusev/Work/Code/js/preventRequestsSpam/js'
+let g:netrw_dirhist_6='/home/irusev/Work/Code/js/preventRequestsSpam'
