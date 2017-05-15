@@ -1,4 +1,4 @@
 # so that versions of files I edit are not uploaded
-backup/*
+.vim/backup/*
 # exception to the rule
-!backup/.gitkeep 
+!.vim/backup/.gitkeep 
