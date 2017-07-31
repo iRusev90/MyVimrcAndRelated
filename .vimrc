@@ -182,9 +182,9 @@ map <F2> :lnext <CR>
 map <F3> :lprev <CR>
 
 " toggle invisible characters
-" set list
-" set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
-" set showbreak=↪
+ set list
+ set listchars=tab:>-,trail:.
+ set showbreak=↪
 
 " Syntastic settings
 let g:syntastic_javascript_checkers = ['jshint']
@@ -248,7 +248,7 @@ autocmd QuickFixCmdPost    l* nested lwindow
 set smartindent
 set tabstop=4
 set shiftwidth=4
-set expandtab
+" set expandtab
 
 " macros
 let @c = '"+y'
