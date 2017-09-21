@@ -10,3 +10,11 @@ snippet html "generic html start"
 </body>
 </html>
 endsnippet
+
+snippet css "databind for oga" 
+,css: {active: nav${1:Name}Button.isActive}
+endsnippet
+
+snippet data "data-bind for oga" 
+data-bind="visible: nav${1:Name}Button.isVisible, click: nav$1Button.goToView ,css: {active: nav$1Button.isActive}"
+endsnippet

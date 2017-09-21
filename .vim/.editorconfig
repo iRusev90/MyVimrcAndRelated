@@ -1,6 +1,1 @@
-;.editorconfig
-
-root = true
-
-[**.js]
-indent_style = tab
+/home/irusev/Self/vimSetup/MyVimrcAndRelated/.editorconfig

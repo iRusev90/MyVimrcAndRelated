@@ -13,3 +13,40 @@ endsnippet
 snippet console "log hello world" 
 console.log('hello world');
 endsnippet
+
+snippet switch "genericSwitch" 
+switch(${1:matcher}) {
+	case ${2:match1}: ${3:logic1};
+		break;
+	case ${4:match2}: ${5:logic2};
+		break;
+	case ${6:match3}: ${7:logic3};
+		break;
+	default: ${8:defaultLogic};
+}
+endsnippet
+
+snippet vm "generic vm" 
+namespace("${1:oga.viewmodel}");
+
+$1.${2:NameVM} = function() {
+
+	this.init = function() {
+		oga.logger("initing $2");
+	};
+
+};
+endsnippet
+
+snippet route "route child" 
+{
+	url: "${1:dashboard}",
+	view: lottoOrgTemplatesDir + "$1-view.html",
+	viewModel: lottoOrgVMs.DashboardVM,
+	step: "$1"
+}$2
+endsnippet
+
+snippet nav "nav button" 
+this.nav${1:Button}Button = new oga.model.NavButton("${2:viewName}");
+endsnippet
