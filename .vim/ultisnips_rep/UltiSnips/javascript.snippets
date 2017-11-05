@@ -5,7 +5,7 @@ function ${1:name}(${2:arguments}) {
 endsnippet
 
 snippet for "generic for cycle" 
-for (var ${1:i} = 0; $1 < ${2:Things}.length - 1; $1++) {
+for (var ${1:i} = 0; $1 < ${2:Things}.length; $1++) {
 	var ${3:element} = $2[$1];
 }
 endsnippet
@@ -49,4 +49,8 @@ endsnippet
 
 snippet nav "nav button" 
 this.nav${1:Button}Button = new oga.model.NavButton("${2:viewName}");
+endsnippet
+
+snippet # "generate node shebang" 
+#!/usr/bin/node
 endsnippet

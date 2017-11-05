@@ -1,4 +1,3 @@
-
 " example vim settings from tutorial
 
 " An example for a vimrc file.
@@ -154,6 +153,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'ornicar/vim-mru'
 
 call vundle#end()            
 
@@ -166,7 +166,7 @@ filetype plugin indent on    " required!
 let g:UltiSnipsExpandTrigger="<c-space>"
 let g:UltiSnipsListSnippets="<c-l>"
 let g:UltiSnipsJumpForwardTrigger="<c-e>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-e>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-e>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsUsePythonVersion = 3
 set rtp+=~/.vim/ultisnips_rep
@@ -182,11 +182,12 @@ map <F2> :lnext <CR>
 map <F3> :lprev <CR>
 
 " toggle invisible characters
- set list
- set listchars=tab:>-,trail:.
+" set list
+ set listchars=tab:>-,trail:.,space:.
  set showbreak=↪
 
 " Syntastic settings
+"let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_javascript_checkers = ['jshint']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -257,6 +258,13 @@ let @r = ':e!'
 let @s = 'ggVG'
 let @d = '@sd'
 " end macros
+
+
+" save vim session 
+map <F4> :mksession! ~/.vim/backup/vim_session <cr> " Quick write session with F4
+map <F5> :source ~/.vim/backup/vim_session <cr>     " And load session with F5
+
+" end save vim session
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 "cmap w!! w !sudo tee > /dev/null %
