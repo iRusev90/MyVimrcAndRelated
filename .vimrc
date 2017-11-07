@@ -280,3 +280,6 @@ colorscheme monokai
 
 " set vi term colors - without this tmux will lose vim's themes
 set term=screen-256color
+
+"brackets matching 
+hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
