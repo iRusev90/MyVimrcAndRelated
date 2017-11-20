@@ -177,9 +177,18 @@ let g:UltiSnipsSnippetsDir="~/.vim/ultisnips_rep/UltiSnips"
 map <Up> :echo 'pressed Up' <cr>
 map <Down> :echo 'pressed Down' <cr>
 map <Left> :echo 'pressed left' <cr>
+map <Right> :echo 'pressed right' <cr>
+
+"C-D is later remapped to be used by multiple cursor
+noremap <S-J> <C-D>  
+noremap <S-k> <C-U>
+
 map <c-n> :NERDTreeToggle <CR>
+
+" depricated
 map <F2> :lnext <CR>
 map <F3> :lprev <CR>
+" /depricated
 
 " toggle invisible characters
 " set list
@@ -266,8 +275,8 @@ map <F5> :source ~/.vim/backup/vim_session <cr>     " And load session with F5
 
 " end save vim session
 
-" Allow saving of files as sudo when I forgot to start vim using sudo.
-"cmap w!! w !sudo tee > /dev/null %
+" Allow saving of files as sudo when I forget to start vim using sudo.
+ cmap W! w !sudo tee > /dev/null %
 
 
 " chage the directory in which all backup files are stored
