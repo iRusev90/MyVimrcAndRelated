@@ -10,8 +10,8 @@ for (var ${1:i} = 0; $1 < ${2:Things}.length; $1++) {
 }
 endsnippet
 
-snippet console "log hello world" 
-console.log('hello world');
+snippet cons "console.log" 
+console.log($1);
 endsnippet
 
 snippet switch "genericSwitch" 
@@ -53,4 +53,16 @@ endsnippet
 
 snippet # "generate node shebang" 
 #!/usr/bin/node
+endsnippet
+
+snippet ejs "EJS tag"
+<%= $1 %>
+endsnippet
+
+snippet module "Export lib" 
+if (typeof module !== undefined && module.exports == {}) { //Node
+    module.exports = ${1:MyExport};
+} else { //Browser
+    window['${2:ExportName}'] = $1;
+}
 endsnippet
