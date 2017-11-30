@@ -294,5 +294,5 @@ set term=screen-256color
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 
 "makes ctrlp and native finds ignore files in the node modules dir. NerdTree
-"still shows the folder. It's property is NerdTreeIgnore. 
+"still shows the folder. Its property is NerdTreeIgnore. 
 set wildignore+=**/node_modules/**
