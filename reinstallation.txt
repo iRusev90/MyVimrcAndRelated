@@ -9,7 +9,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim
 3) install package dependencies
 * in the youcompleteme folder run:
 	-  git submodule update --init --recursive
-	-  python installation by hand
+	-  ./python.py
 
 * in the tern_for_vim folder run:
 	-  npm install
