@@ -8,3 +8,5 @@
 .vim/bundle/*
 # exception to the rule because newer versions of vim-airline aren't compatible with other packages
 !.vim/bundle/vim-airline
+
+.vim/.netrwhist
