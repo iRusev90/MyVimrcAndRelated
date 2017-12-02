@@ -1,10 +1,17 @@
-reinstall vundle by hand 
-run open .vimrc and run PluginInstall (there will be an error with vim airline
-because I'm keeping an old version due to compatibility issues)
-in the youcompleteme folder run git submodule update --init --recursive
-in the youcompleteme folder and run python installation by hand
+1) reinstall vundle by hand: 
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 
+
+2) open .vimrc and run PluginInstall (there will be an error with vim airline
+* there will be an error with vim-airline because an old versioned is already
+  there for compatibility reasons
+* youcompleteme will take a long time
+
+3) install package dependencies
+* in the youcompleteme folder run:
+	-  git submodule update --init --recursive
+	-  python installation by hand
+
+* in the tern_for_vim folder run:
+	-  npm install
 
 to set tabs as js-beautify's standart add the file .editorconfig in .vim/
-
-go to .vim/bundle/tern_for_vim and run
-npm install
