@@ -1,5 +1,5 @@
 1) reinstall vundle by hand: 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 
+git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim 
 
 2) open .vimrc and run PluginInstall (there will be an error with vim airline
 * there will be an error with vim-airline because an old versioned is already
@@ -13,5 +13,3 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 * in the tern_for_vim folder run:
 	-  npm install
-
-to set tabs as js-beautify's standart add the file .editorconfig in .vim/

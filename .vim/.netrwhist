@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/home/irusev/Work/Code/Java/oga/oga-card-backend-web/src/main/webapp/assets'
-let g:netrw_dirhist_2='/home/irusev/Work/Code/Java/oga/oga-card-backend-web/src/main/webapp'
-let g:netrw_dirhist_3='/home/irusev/Work/Code/Java/oga/oga-card-backend-web/src/main'
-let g:netrw_dirhist_4='/home/irusev/Work/Code/Java/oga/oga-card-backend-web/src'
-let g:netrw_dirhist_5='/home/irusev/Work/Code/Java/oga/oga-card-backend-web'
-let g:netrw_dirhist_6='/home/irusev/Work/Code/Java/oga'
-let g:netrw_dirhist_7='/home/irusev/Work/Code/Java/oga/oga-card-frontend-web'
-let g:netrw_dirhist_8='/home/irusev/Work/Code/Java/oga/oga-card-frontend-web/oga-lottery-organisation'
-let g:netrw_dirhist_9='/home/irusev/Work/Code/Java/oga/oga-card-frontend-web/oga-lottery-organisation/oga-main'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/home/irusev/Self/vimSetup/MyVimrcAndRelated/.vim'
