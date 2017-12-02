@@ -2,3 +2,9 @@
 .vim/backup/*
 # exception to the rule
 !.vim/backup/.gitkeep 
+
+
+# so that vim packages' dirs aren't uploaded
+.vim/bundle/*
+# exception to the rule because newer versions of vim-airline aren't compatible with other packages
+!.vim/bundle/vim-airline
