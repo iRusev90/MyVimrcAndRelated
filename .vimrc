@@ -154,6 +154,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'marijnh/tern_for_vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'ornicar/vim-mru'
+Plugin 'majutsushi/tagbar'
 
 call vundle#end()            
 
@@ -293,9 +294,12 @@ set term=screen-256color
 "brackets matching 
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 
-"makes ctrlp and native finds ignore files in the node modules dir. NerdTree
-"still shows the folder. Its property is NerdTreeIgnore. 
+"makes ctrlp and native finds ignore files in the node modules dir.
+"NerdTree still shows the folder. Its property is NerdTreeIgnore. 
 set wildignore+=**/target/**,**/bower_components/**,**/node_modules/**
 
 "closes buffers after they've been used
 autocmd CompleteDone * pclose
+
+"self explanitory
+set relativenumber
