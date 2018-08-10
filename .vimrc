@@ -305,3 +305,9 @@ autocmd CompleteDone * pclose
 set relativenumber
 
 let g:netrw_cygwin=0
+
+"without this mouse split resizing in tmux doesn't work
+if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+endif
