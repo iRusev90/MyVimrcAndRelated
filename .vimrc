@@ -289,17 +289,19 @@ set udir=~/.vim/backup/
 colorscheme monokai
 
 " set vi term colors - without this tmux will lose vim's themes
-set term=screen-256color
+" set term=screen-256color - breaks split resizing on ubuntu 18.04
 
 "brackets matching 
 hi MatchParen cterm=bold ctermbg=none ctermfg=magenta
 
 "makes ctrlp and native finds ignore files in the node modules dir.
 "NerdTree still shows the folder. Its property is NerdTreeIgnore. 
-set wildignore+=**/target/**,**/bower_components/**,**/node_modules/**
+set wildignore+=**/target/**,**/bower_components/**,**/node_modules/**,**/samples/**
 
 "closes buffers after they've been used
 autocmd CompleteDone * pclose
 
 "self explanitory
 set relativenumber
+
+let g:netrw_cygwin=0

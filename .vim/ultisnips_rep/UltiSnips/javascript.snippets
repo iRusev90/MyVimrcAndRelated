@@ -38,6 +38,14 @@ $1.${2:NameVM} = function() {
 };
 endsnippet
 
+snippet md "generic model" 
+namespace("demax.admin.model");
+
+demax.admin.model.$1 = function(dto) {
+	$2
+};
+endsnippet
+
 snippet route "route child" 
 {
 	url: "${1:dashboard}",
@@ -74,4 +82,12 @@ snippet yeo "Description"
 	message: "$3",
 	default: "$4"
 }$5
+endsnippet
+
+snippet mundef "When creating a model and set property if not undefined" 
+this.${1:MyProp} = dto.$1 !== undefined ? dto.$1 : null;
+endsnippet
+
+snippet kmundef "Same as mundef but for when setting an observable" 
+this.${1:MyProp} = dto.$1 !== undefined ? ko.observable(dto.$1) : ko.observable(null);
 endsnippet
