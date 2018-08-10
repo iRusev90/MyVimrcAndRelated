@@ -13,3 +13,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim
 
 * in the tern_for_vim folder run:
 	-  npm install
+
+
+4) if the system copy register doesn't work install
+sudo apt-get install vim-gtk
