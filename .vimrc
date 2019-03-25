@@ -180,7 +180,8 @@ map <Down> :echo 'pressed Down' <cr>
 map <Left> :echo 'pressed left' <cr>
 map <Right> :echo 'pressed right' <cr>
 
-"C-D is later remapped to be used by multiple cursor
+"C-D is later remapped to be used by multiple cursor, C-P to go back one
+"selection
 noremap <S-J> <C-D>  
 noremap <S-k> <C-U>
 
