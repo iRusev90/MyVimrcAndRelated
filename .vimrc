@@ -155,6 +155,7 @@ Plugin 'marijnh/tern_for_vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'ornicar/vim-mru'
 Plugin 'majutsushi/tagbar'
+Plugin 'niklasl/vim-rdf'
 
 call vundle#end()            
 
