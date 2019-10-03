@@ -1,3 +1,85 @@
 snippet # "generates shell script comment" 
 #!/bin/bash
 endsnippet
+
+snippet foreachArg "iterate over each arg" 
+for ${1:var} in "$@"
+do
+    echo "$$1"
+done
+endsnippet
+
+snippet foreach "iterate over array" 
+for ${1:var} in "${${2:ArrayName}[@]}"
+do
+    echo "$$1"
+done
+endsnippet
+
+
+snippet infiniteWhile "infinite while loop" 
+while [ true ]
+do
+	sleep 1
+done
+endsnippet
+
+snippet if "standard if" 
+if [ ${1:1 == 1} ]
+then
+	${2:echo do something}
+fi
+endsnippet
+
+snippet ifTwoConds "if with two conditions" 
+if [ ${1:1 == 1} ] || [ ${2:2 == 2} ]
+then
+	${3:echo do something}
+fi
+endsnippet
+
+snippet ifEmptyStr "if condition empty str" 
+ -z "$$1" 
+endsnippet
+
+snippet ifNotEmptyStr "if condition not empty str" 
+-n "$$1" 
+endsnippet
+
+
+snippet foreachStr "itrates through each entry in a string list" 
+while read -r line; do
+	${2:echo $line}
+done <<< "$$1"
+endsnippet
+
+snippet multiLineConcat "concat multiple lines into single var" 
+${1:CONCATED}=$(cat <<-END
+	${2:replace me}
+	${3:replace me}
+END
+)
+endsnippet
+
+snippet argsCount "arguments count" 
+"$#"
+endsnippet
+
+snippet ifStrLike "if string is like" 
+if [[ "${1:one}" == *"${2:two}"* ]]
+then
+	${3:echo replace me}
+fi
+endsnippet
+
+
+snippet func "genericFunction" 
+function ${1:funcName} ()
+{
+${2:echo hello}
+}
+endsnippet
+
+snippet split "split string" 
+${1:FIRST_ELEMENT}=$(echo ${2:$TOSPLIT} | cut -d '${3:$DELIMITER}' -f${4:1})
+endsnippet

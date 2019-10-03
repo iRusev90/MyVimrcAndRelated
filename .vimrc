@@ -269,13 +269,15 @@ let @v = '"+p'
 let @r = ':e!'
 let @s = 'ggVG'
 let @d = '@sd'
+let @t = 'vl:termj:q'
+
+
 " end macros
 
 
 " save vim session 
 map <F4> :mksession! ~/.vim/backup/vim_session <cr> " Quick write session with F4
 map <F5> :source ~/.vim/backup/vim_session <cr>     " And load session with F5
-
 " end save vim session
 
 " Allow saving of files as sudo when I forget to start vim using sudo.
@@ -313,3 +315,7 @@ if &term =~ '^screen'
     " tmux knows the extended mouse mode
     set ttymouse=xterm2
 endif
+
+" makes the system clipboard be the default vim clipboard
+" set clipboard=unnamedplus
+"
