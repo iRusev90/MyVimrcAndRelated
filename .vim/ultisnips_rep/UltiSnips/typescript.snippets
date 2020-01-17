@@ -1,9 +1,27 @@
-snippet func "Simple function snippet" 
+snippet func "generic function" i 
 function ${1:name}(${2:arguments}) {
     ${3://body ...}
 }
 endsnippet
 
+snippet for "generic for cycle" 
+for (var ${1:i} = 0; $1 < ${2:Things}.length; $1++) {
+	var ${3:element} = $2[$1];
+}
+endsnippet
+
 snippet cons "console.log" 
 console.log($1);
+endsnippet
+
+snippet switch "genericSwitch" 
+switch(${1:matcher}) {
+	case ${2:match1}: ${3:logic1};
+		break;
+	case ${4:match2}: ${5:logic2};
+		break;
+	case ${6:match3}: ${7:logic3};
+		break;
+	default: ${8:defaultLogic};
+}
 endsnippet

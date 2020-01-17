@@ -271,7 +271,6 @@ let @s = 'ggVG'
 let @d = '@sd'
 let @t = 'vl:termj:q'
 
-
 " end macros
 
 
@@ -282,6 +281,10 @@ map <F5> :source ~/.vim/backup/vim_session <cr>     " And load session with F5
 
 " Allow saving of files as sudo when I forget to start vim using sudo.
  cmap W! w !sudo tee > /dev/null %
+
+" Execute terminal command on current file and open output in new pane
+ cmap C! execute 'vnew \| 0read ! echo changeme' expand('%')
+
 
 
 " chage the directory in which all backup files are stored
@@ -319,3 +322,6 @@ endif
 " makes the system clipboard be the default vim clipboard
 " set clipboard=unnamedplus
 "
+
+" makes vnew open a new pane to the right instead of left
+set splitright
