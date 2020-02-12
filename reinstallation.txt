@@ -1,3 +1,9 @@
+Must have git installed before hand
+Must have vim installed before hand
+Must have cmake and python - for youcompleteme
+Must have npm - for tern_for_vim
+
+
 1) reinstall vundle by hand: 
 git clone https://github.com/VundleVim/Vundle.vim.git .vim/bundle/Vundle.vim 
 

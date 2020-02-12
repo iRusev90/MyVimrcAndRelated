@@ -247,6 +247,7 @@ let g:airline_theme='luna'
 " END vim-airline
 
 " vim multiple cursor settings
+let g:multi_cursor_start_word_key='<C-d>'
 let g:multi_cursor_next_key='<C-d>'
 let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
