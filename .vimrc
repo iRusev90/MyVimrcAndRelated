@@ -271,8 +271,16 @@ let @r = ':e!'
 let @s = 'ggVG'
 let @d = '@sd'
 let @t = 'vl:termj:q'
+let @l = '0/ip":eevi"@c:!ssh root@`xclip -o -selection clipboard` -o StrictHostKeyChecking=no "cat /var/log/syslog | grep isti_java" | gvim -'
+let @k = '0/ip":eevi"@c:!ssh root@`xclip -o -selection clipboard` "tail -n 10000 /var/log/syslog | grep isti_java" | gvim -'
+let @j = '0/ip":eevi"@c:!gvim scp://root@`xclip -o -selection clipboard`//home/backend'
 
 " end macros
+
+
+" copy current file path to clipboard
+nmap cpf :let @+ = expand("%:p")<cr>
+
 
 
 " save vim session 

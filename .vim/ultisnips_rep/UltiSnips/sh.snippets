@@ -83,3 +83,17 @@ endsnippet
 snippet split "split string" 
 ${1:FIRST_ELEMENT}=$(echo ${2:$TOSPLIT} | cut -d '${3:$DELIMITER}' -f${4:1})
 endsnippet
+
+
+snippet foreachFile "iterates files in a directory" 
+for file in $(ls ${1:*}); do
+	${2:echo $file}		
+done
+endsnippet
+
+snippet fornum "for loop for given number of repetitions" 
+for ((i=1; i<=${1:repetitions}; i++))
+do	
+	echo iteration $i
+done
+endsnippet

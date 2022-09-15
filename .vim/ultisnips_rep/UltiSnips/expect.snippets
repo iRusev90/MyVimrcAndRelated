@@ -5,3 +5,17 @@ endsnippet
 snippet set "sets variables based on script input"
 set ${1:variable1} [lindex $argv ${2:0}];
 endsnippet
+
+snippet listExample "example how to work with list" 
+set infaLast {12}
+lappend infaLast 13
+if { $::infaLast > 0 } {
+    set i 1
+    foreach arg $::infaLast {
+        puts "argument $i is $arg"
+        incr i
+    }
+} else {
+    puts "no command line argument passed"
+}
+endsnippet
